@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebGL</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script id="vertex-shader" type="notjs">
+      attribute vec4 a_position;
+      void main(){
+          gl_Position = a_position;
+      }
+    </script>
+    <script id="fragment-shader" type="notjs">
+      precision mediump float;
+      void main(){
+          gl_FragColor = vec4(1,0,0,1);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>WEBGL Tests</h1>
+    <canvas id="Engine"> HTML 5 not supported somehow </canvas>
+  </body>
+</html>
